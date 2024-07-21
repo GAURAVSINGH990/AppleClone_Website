@@ -2,9 +2,78 @@
     margin :0;
     padding:0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 html, body{
     width: 100%;
     height: 100%;
+}
+#main{
+    position :relative; /* esse hmare pages overlap nhi krenge */
+    overflow: hidden; /* esse jo v chije bahar jayemgi wo hide ho jayengi*/
+}
+
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+#page1>nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 2 element k beech space bnayega*/
+    padding: 0px 20px;
+    height: 7vh;
+    width: 50vw;
+    background-color: white;
+    position: absolute; /**/
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%); /*esse hmara ele center me aa jayega */
+    color: black;
+}
+
+#page1>nav>button{
+    padding:  7px 20px;
+    border-radius:50px; 
+    border: none;
+    background-color:white;
+}
+
+#page>nav>h3{
+    font-weight: 400;
+}
+
+#page1>img{
+    height: 127%;
+    width: 60%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%; /* ye dene se phle position deni hoti hai */
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+#page1-bottom{
+    height: 25%;
+    width: 50%;
+    /* background-color: green; */
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: column;
+}
+
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
 }
